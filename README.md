@@ -15,5 +15,6 @@ The target feature is `yield` which is a `continuous variable`. The task is to c
 4) Standardizing input features
 5) Basline modeling using gradient boosted trees: `RMSE - 188`
 6) Cross validation using gradient boosted trees: `RMSE - 141`
+7) Explainable AI using `shap` 
 
 Acknowledegement: ***TMLC Academy*** 
