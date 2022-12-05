@@ -18,4 +18,9 @@ The target feature is `yield` which is a `continuous variable`. The task is to c
 7) Model hyperparameters tuning using pipeline object with XGBRegressor: `RMSE - 18`
 8) Explainable AI using `shap` 
 
+**Learning outcomes:**
+
+- Feature selection methods
+- Development of machine learning pipelines using sklearn's pipeline object
+
 Acknowledegement: ***TMLC Academy*** 
