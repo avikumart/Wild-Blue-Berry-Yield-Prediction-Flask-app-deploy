@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Blueberry Yield Prediction App</title>
+
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="jumbotron">
+        <center>
+            <h1>🍇 Wild Blueberry Yield Prediction</h1>
+        </center>
+    </div>
+
+    <div class="container">
+        <h3> Provide input here </h3>
+
+        <!-- enctype="multipart/form-data"   -->
+        <!-- For passing files -->
+
+        <form method="POST" action="{{ url_for('predict') }}" >
+            {% for feat in feats %}
+            <div class="form-group">
+            <label for="exampleInput">{{feat}}</label>
+            <input type="number" 
+                    name= {{feat}}
+
+                    required
+                    class="form-control" 
+                    id="exampleInput" 
+                    placeholder= {{feat}}>
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+          
+        {% if pred %}
+        <div class="alert alert-success" role="alert">
+            <h4> Your prediction is {{ pred }}! </h4></div>
+        {% endif %}
+          
+        <div class="spacer" style="width: 100%; height: 200px"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
