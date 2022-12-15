@@ -14,3 +14,13 @@ curr_path = os.path.dirname(os.path.realpath(__file__))
 
 feature_cols = ['AverageRainingDays', 'clonesize', 'AverageOfLowerTRange',
     'AverageOfUpperTRange', 'honeybee', 'osmia', 'bumbles', 'andrena']
+
+app = Flask(__name__)
+
+@app.route('/api/predict', methods=['GET','POST'])
+def api_predict():
+    return {'message':"gotcha"}
+
+
+if __name__ == "__main__":
+    app.run()
