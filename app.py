@@ -41,7 +41,6 @@ def api_predict():
     
     y_pred = predict_yield(np.array(i).reshape(1,-1))
     
-    
     return {'message':"success", "pred":json.dumps(int(y_pred))}
 
 @app.route('/')
