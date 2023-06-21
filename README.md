@@ -9,6 +9,8 @@ The target feature is `yield` which is a `continuous variable`. The task is to c
 
 ### Web App: [Click Here](https://wbb-prediction.onrender.com/)
 
+### Published article by Analytics Vidhya: [Click here](https://www.analyticsvidhya.com/blog/2023/06/crop-yield-prediction-using-machine-learning-and-flask-deployment/)
+
 **Solution:**
 
 1) EDA using matplotlib, pandas and seaborn
